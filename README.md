@@ -18,4 +18,4 @@ Do not add customers, partners, statistics or services unless they are real and 
 The current `www.knowyourproducts.in` site is served by GitHub Pages from a separate repository.
 To publish this design there, replace that repository's site files with the contents of this folder
 (keep its existing `CNAME` file, which tells GitHub Pages to answer for `www.knowyourproducts.in`).
-The Protryx app itself stays at `exam.knowyourproducts.in` on Render and is not affected.
+The Protryx app itself stays at `protryx.knowyourproducts.in` on Render and is not affected.
