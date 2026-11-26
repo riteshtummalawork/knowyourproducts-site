@@ -1,4 +1,4 @@
-/* Know Your Products: parent company site. Static, no scripts, fonts self-hosted (SIL OFL). */
+/* Protryx: public site at protryx.com. Static, no scripts, fonts self-hosted (SIL OFL). */
 @font-face { font-family: "Manrope"; src: url("fonts/manrope-latin-wght-normal.woff2") format("woff2"); font-weight: 200 800; font-display: swap; }
 @font-face { font-family: "Inter"; src: url("fonts/inter-latin-wght-normal.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
 
@@ -21,10 +21,14 @@ a:hover { color: var(--blue-dark); }
 .bar { border-bottom: 1px solid var(--line); background: var(--white); }
 .bar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 64px; flex-wrap: wrap; }
 .brand { display: flex; align-items: center; gap: .6rem; color: var(--ink); text-decoration: none; font-family: "Manrope", sans-serif; font-weight: 800; font-size: 1.05rem; }
-.brand svg { width: 30px; height: 30px; }
+.brand svg { width: 30px; height: 30px; flex: none; }
+.brand .wordmark { font-size: 1.2rem; letter-spacing: -.01em; color: var(--navy); }
+.brand .wordmark b { color: var(--red); font-weight: 800; }
 .bar nav { display: flex; gap: .25rem; }
 .bar nav a { color: var(--ink); text-decoration: none; padding: .45rem .7rem; border-radius: 4px; font-weight: 550; }
 .bar nav a:hover { background: var(--tint); }
+.bar nav a.nav-cta { background: var(--navy); color: #fff; }
+.bar nav a.nav-cta:hover { background: var(--ink); color: #fff; }
 
 .intro { padding: 96px 0 88px; border-bottom: 1px solid var(--line); background:
   linear-gradient(to right, var(--line) 1px, transparent 1px) 0 0 / 80px 80px,
@@ -33,10 +37,19 @@ a:hover { color: var(--blue-dark); }
 .lead { font-size: 1.15rem; color: var(--slate); max-width: 620px; margin: 0 0 1.8rem; }
 .btn { display: inline-flex; align-items: center; min-height: 44px; padding: .65rem 1.15rem; border-radius: 4px; background: var(--ink); color: #fff; text-decoration: none; font-weight: 600; }
 .btn:hover { background: var(--navy); color: #fff; }
+.btn.ghost { background: transparent; color: var(--ink); border: 1px solid var(--ink); }
+.btn.ghost:hover { background: var(--white); color: var(--navy); }
+.actions { display: flex; flex-wrap: wrap; gap: .75rem; }
 
 .block { padding: 72px 0; }
 .block.alt { background: var(--surface); border-top: 1px solid var(--line); }
 .block h2 { font-size: 1.8rem; margin-bottom: 1.5rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+.card { border: 1px solid var(--line); border-top: 3px solid var(--navy); border-radius: 8px; padding: 1.4rem; background: var(--white); }
+.card:nth-child(3) { border-top-color: var(--red); }
+.card h3 { font-size: 1.1rem; }
+.card p { color: var(--slate); margin: 0; }
+.block.alt .btn { margin-top: .6rem; }
 .product { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 1.5rem; border: 1px solid var(--line); border-radius: 10px; padding: 1.8rem; max-width: 880px; }
 .product-mark svg { width: 64px; height: 64px; display: block; }
 .product h3 { font-size: 1.4rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: .3rem .8rem; }
